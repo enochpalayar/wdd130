@@ -1,5 +1,10 @@
+:root {
+  --background-color: lightskyblue; 
+  --width: 150px;
+}
+
 nav {
-    background-color: lightskyblue;
+    background-color: var(--background-color);
     padding: 10px;
 }
 
@@ -14,7 +19,7 @@ h1 {
 }
 
 img {
-    width: 150px;
+    width: var(--width);
     height: auto;
     border: 1px solid lightskyblue;
     padding: 2px;
@@ -41,7 +46,7 @@ aside img {
 }
 
 main img {
-    width: 150px;
+    width: var(--width);
     height: auto;
 }
 
