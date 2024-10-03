@@ -1,6 +1,7 @@
 :root {
   --background-color: lightskyblue; 
   --width: 150px;
+  --height: auto;
 }
 
 nav {
@@ -42,12 +43,12 @@ aside {
 
 aside img {
     width: 200px;
-    height: auto;
+    height: var(--height);
 }
 
 main img {
     width: var(--width);
-    height: auto;
+    height: var(--height);
 }
 
 p { padding: 0;}
