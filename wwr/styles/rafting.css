@@ -11,7 +11,7 @@ header {
 	grid-template-columns:  200px 1fr 0fr;
 	border-bottom: 20px solid #cf8a3a;
 	max-width: 1000px;
-    background-color: rgb(10, 31, 51);
+    background-color: var(--primary-color);
 }
 
 header img{
