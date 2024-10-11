@@ -1,5 +1,5 @@
 :root {
-  --background-color: lightskyblue; 
+  --background-color: darkslategrey; 
   --width: 150px;
   --height: auto;
 }
@@ -9,6 +9,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header,.grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+
+}
+
 /* Class Selectors */
 .box {
     margin: 1rem;
@@ -16,6 +23,9 @@
     padding: 1rem;
     background-color: #ddd;
     color: #000;
+    width: 335px;
+  
+    
 }
 
 aside {
@@ -33,17 +43,30 @@ aside h2 {
 }
 nav {
     background-color: var(--background-color);
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
+    color: aliceblue;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    
+}
+
+nav a:hover {
+    color: lightblue;
 }
 
 h1 {
-    color: darkblue;
+    color: darkslategrey;
+    text-align:  center;
+    border-bottom: 1px solid #000;
 }
 
 img {
@@ -51,16 +74,41 @@ img {
     height: auto;
     border: 1px solid lightskyblue;
     padding: 2px;
-    box-shadow: 0 0 30px darkgray;
+    box-shadow: 0 0 15px darkgray;
+    box-sizing: var(--height);
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    align-content: center;
 }
 
 main {
-    max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
-    width: 200px;
-    height: var(--height);
+    width: 300px;
+    height: 450px;
+}
+
+h2 {
+    display:block;
+    font-size: 1.5em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 main img {
@@ -68,13 +116,16 @@ main img {
     height: var(--height);
     float: right;
     margin-left: 10px;
+    margin-top: 10px;
     margin-bottom: 2px;
 }
 
-p { padding: 0;}
+p { 
+    padding: 0;
+    margin-top: 5px;
+}
 
 footer {
-    margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
 }
