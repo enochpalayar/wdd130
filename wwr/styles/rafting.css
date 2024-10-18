@@ -325,8 +325,13 @@ form label {
 .wireframe {
     position: absolute; 
     right: 825px; 
-    bottom: 10px; 
-    
+    bottom: 10px;    
+}
+
+.wireframe-text {
+    position: absolute; 
+    right: 865px; 
+    bottom: 10px;  
 }
 
 .wireframe ul {
