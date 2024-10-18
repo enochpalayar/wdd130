@@ -328,12 +328,6 @@ form label {
     bottom: 10px;    
 }
 
-.wireframe-text {
-    position: absolute; 
-    right: 865px; 
-    bottom: 10px;  
-}
-
 .wireframe ul {
     list-style: none; 
     display: flex; 
