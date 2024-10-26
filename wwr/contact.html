@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Rapid Rafting Contact Us</title>
     <meta name="description" content="Contact us at Rapid Rafting Company through filling our contact us form, the details of our contact information is also provided in this page">
+    <meta name="author" content="Enoch Palayar">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -25,9 +26,9 @@
     <main>
       <h1 class="contact-style">Contact Us</h1>
       <h2 class="contact-info">Contact Information</h2>
-        <h3>Rapid Rafting Company</h3>
+        <p class="rapid-contact">Rapid Rafting Company</p>
         <div class="info">
-          <p><strong>Address:</strong> 0551 San Roque, Calabanga, Camarines Sur, Bicol, Philippines</p>
+          <p><strong>Address:</strong> 0551 San Roque, Calabanga, Camarines Sur, Bicol,<br> Philippines</p>
           <p><strong>Phone:</strong> 999-9999-9999</p>
           <p><strong>Email:</strong> <a href="mailto:">enochp@gmail.com</a></p>
         </div>
@@ -58,23 +59,27 @@
       <h2>Send Us a Message</h2>
       <form>
         <div>
-          <label for="full_name">Full Name</label>
-          <input type="text" id="full_name" name="full_name" placeholder="Full Name">
+          <label for="first_name">First Name</label>
+          <input type="text" id="first_name" name="first_name" placeholder="First Name">
+        </div>
+        <div>
+          <label for="last_name">Last Name</label>
+          <input type="text" id="last_name" name="last_name" placeholder="Last Name">
         </div>
         <div>
           <label for="email">Email Address</label>
           <input type="email" id="email" name="email" placeholder="Email Address">
         </div>
         <div>
-          <label for="subject">Subject</label>
-          <select id="subject" name="subject">
-            <option value="">Choose one...</option>
-            <option value="general">General Inquiry</option>
-            <option value="reservation">Reservation Question</option>
-            <option value="suggestion">Website Suggestion</option>
-          </select>
+            <label for="subject">Subject</label><br><br>
+            <input type="radio" id="general" name="subject" value="general">
+            <label for="general">General Inquiry</label><br>
+            <input type="radio" id="reservation" name="subject" value="reservation">
+            <label for="reservation">Reservation Question</label><br>
+            <input type="radio" id="suggestion" name="subject" value="suggestion">
+            <label for="suggestion">Website Suggestion</label>
         </div>
-        <div>
+        <div><br>
           <label for="message">Message</label>
           <textarea id="message" name="message" placeholder="Your message" rows="5"></textarea>
         </div>
